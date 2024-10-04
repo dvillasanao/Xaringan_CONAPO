@@ -9,6 +9,7 @@ output:
   xaringan::moon_reader:
     css: xaringan-themer.css
     nature:
+      titleSlideClass: ["right", "top", "my-title"]
       slideNumberFormat: "%current%"
       highlightStyle: github
       highlightLines: true
