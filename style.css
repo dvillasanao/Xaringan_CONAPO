@@ -15,3 +15,26 @@
     overflow-y: auto;
 }
 </style>
+
+/*Color de presentación principal*/
+
+.bg-black {
+  background-color: black;
+}
+
+/*-- Esconde el numero de la diapositiva titular --*/
+.titular .remark-slide-number { display: none; }
+
+
+/*-- Desplazar hacía abajo el título --*/
+.title-down h1 {
+  margin-top: 160px; /* Ajusta este valor según lo necesites */
+}
+
+.large-text {
+  font-size: 80px;
+  color: #D56A2E;
+  text-align: right;
+  margin-top: 200px; /* Ajusta este valor según lo necesites */
+  margin-right: 100px;
+}
