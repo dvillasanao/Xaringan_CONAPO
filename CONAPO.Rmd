@@ -12,7 +12,9 @@ output:
      - xaringan-themer.css 
      - rladies-fonts 
      - style.css
+    lib_dir: libs
     seal: false
+    self_contained: true
     nature:
       titleSlideClass: ["right", "top", "my-title"]
       slideNumberFormat: "%current%"
@@ -21,7 +23,7 @@ output:
       ratio: 16:9
       countIncrementalSlides: false
       includes:
-        after_body: [insert-logo.html]
+        in_header: insert-logo.html
 ---
 
 ```{r setup, include=FALSE}
@@ -37,8 +39,15 @@ knitr::opts_chunk$set(
   hiline = TRUE,
   dpli = 300
 )
-xaringanExtra::use_tile_view()
-xaringanExtra::use_panelset()
+
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#D56A2E",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+#xaringanExtra::use_tile_view()
+#xaringanExtra::use_panelset()
 ```
 
 ```{r, echo = FALSE}
@@ -50,24 +59,23 @@ library(fontawesome)
 library(xaringanExtra)
 ```
 
-```{r, eval = FALSE}
+```{r, eval = FALSE, echo = FALSE}
 xaringan::inf_mr()
 ```
 
-
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-library(xaringanthemer)
-style_duo_accent(
-  primary_color = "#D56A2E",
-  secondary_color = "#FF961C",
-  inverse_header_color = "#FFFFFF"
-)
-```
-
-```{r use-logo, echo=FALSE}
+```{r use-logo, eval = TRUE, echo = FALSE}
+# Logo
 xaringanExtra::use_logo(paste0(here::here(), "/img/xaringan.png"), width = "55px")
 ```
 
+---
+class: inverse center middle 
+
+# Consejo Nacional de Población  
+
+![](img/conapo_logo.png)
+
+---
 
 ## Typography
 

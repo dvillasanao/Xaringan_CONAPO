@@ -5,23 +5,19 @@
     <meta charset="utf-8" />
     <meta name="author" content="Yihui Xie" />
     <meta name="author" content="Garrick Aden-Buie" />
-    <meta name="date" content="2024-10-05" />
-    <script src="CONAPO_files/header-attrs/header-attrs.js"></script>
-    <link href="CONAPO_files/remark-css/rladies-fonts.css" rel="stylesheet" />
-    <link href="CONAPO_files/tile-view/tile-view.css" rel="stylesheet" />
-    <script src="CONAPO_files/tile-view/tile-view.js"></script>
-    <link href="CONAPO_files/panelset/panelset.css" rel="stylesheet" />
-    <script src="CONAPO_files/panelset/panelset.js"></script>
-    <link href="CONAPO_files/htmltools-fill/fill.css" rel="stylesheet" />
-    <script src="CONAPO_files/htmlwidgets/htmlwidgets.js"></script>
-    <link href="CONAPO_files/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
-    <script src="CONAPO_files/datatables-binding/datatables.js"></script>
-    <script src="CONAPO_files/jquery/jquery-3.6.0.min.js"></script>
-    <link href="CONAPO_files/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <link href="CONAPO_files/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
-    <script src="CONAPO_files/dt-core/js/jquery.dataTables.min.js"></script>
-    <link href="CONAPO_files/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
-    <script src="CONAPO_files/crosstalk/js/crosstalk.min.js"></script>
+    <meta name="date" content="2024-10-06" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/rladies-fonts.css" rel="stylesheet" />
+    <link href="libs/htmltools-fill/fill.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <link href="libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding/datatables.js"></script>
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <link href="libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core/js/jquery.dataTables.min.js"></script>
+    <link href="libs/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
@@ -31,12 +27,6 @@
 
 
 
-
-
-
-```r
-xaringan::inf_mr()
-```
 
 
 
@@ -75,6 +65,14 @@ top:1em;right:1em;
 })()</script>
 </div>
 
+---
+class: inverse center middle 
+
+# Consejo Nacional de Población  
+
+![](img/conapo_logo.png)
+
+---
 
 ## Typography
 
@@ -411,8 +409,8 @@ exclude: false
 DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
 ```
 
-<div class="datatables html-widget html-fill-item" id="htmlwidget-e5b8c5af9e03733d0e55" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-e5b8c5af9e03733d0e55">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-6f115e352e7d95da9b9f" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6f115e352e7d95da9b9f">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 layout: true
@@ -570,7 +568,7 @@ The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihu
 "ratio": "16:9",
 "countIncrementalSlides": false,
 "includes": {
-"after_body": "insert-logo.html"
+"in_header": "insert-logo.html"
 }
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
