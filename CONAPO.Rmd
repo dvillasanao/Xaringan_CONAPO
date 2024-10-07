@@ -72,9 +72,10 @@ background-position: -66% 10%
 
 ![](img/conapo_logo.png)
 ---
-class: middle, title-down
+class: center, title-down
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
+<img src="img/Gobernación_CONAPO.jpg" width="800px">
 
 ---
 class: middle, title-down
