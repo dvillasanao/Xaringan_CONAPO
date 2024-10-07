@@ -5,16 +5,23 @@ author:
   - "Yihui Xie"
   - "Garrick Aden-Buie"
 date: '`r Sys.Date()`'
+layout: true
 output:
   xaringan::moon_reader:
-    css: xaringan-themer.css
+    css:
+     - xaringan-themer.css 
+     - rladies-fonts 
+     - style.css
+    seal: false
     nature:
       titleSlideClass: ["right", "top", "my-title"]
       slideNumberFormat: "%current%"
       highlightStyle: github
       highlightLines: true
       ratio: 16:9
-      countIncrementalSlides: true
+      countIncrementalSlides: false
+      includes:
+        after_body: [insert-logo.html]
 ---
 
 ```{r setup, include=FALSE}
@@ -26,9 +33,27 @@ knitr::opts_chunk$set(
   echo = TRUE,
   message = FALSE, 
   warning = FALSE,
-  hiline = TRUE
+  error = FALSE,
+  hiline = TRUE,
+  dpli = 300
 )
+xaringanExtra::use_tile_view()
+xaringanExtra::use_panelset()
 ```
+
+```{r, echo = FALSE}
+require(revealjs)
+library(knitr)
+library(tidyverse)
+library(icons)
+library(fontawesome)
+library(xaringanExtra)
+```
+
+```{r, eval = FALSE}
+xaringan::inf_mr()
+```
+
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
@@ -38,6 +63,11 @@ style_duo_accent(
   inverse_header_color = "#FFFFFF"
 )
 ```
+
+```{r use-logo, echo=FALSE}
+xaringanExtra::use_logo(paste0(here::here(), "/img/xaringan.png"), width = "55px")
+```
+
 
 ## Typography
 
@@ -124,7 +154,7 @@ Dolor elementum fermentum pharetra lectus arcu pulvinar.
 ]
 
 ---
-class: inverse center middle
+class: inverse center middle 
 
 # Topic Changing Interstitial
 
@@ -357,7 +387,7 @@ layout: false
 </dl>
 
 ---
-class: center, middle
+class: center, middle, scrollable-slide
 
 # Thanks!
 

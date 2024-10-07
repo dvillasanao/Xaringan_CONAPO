@@ -1,0 +1,17 @@
+<style>
+.logo {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_An%C3%A1huac.svg/1201px-Logo_An%C3%A1huac.svg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 110px;
+  height: 128px;
+  z-index: 0;
+}
+
+.remark-slide-scaler {
+    overflow-y: auto;
+}
+</style>
