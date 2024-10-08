@@ -77,9 +77,43 @@ background-position: -66% 10%
 class: center, title-down
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
-<img src="img/Gobernación_CONAPO.jpg" width="800px">
+<img src="img/Gobernación_CONAPO.jpg" width="550px"; height="600px">
 
 ---
+
+class: center, title-down
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
+## ¿¿A qué se dedicada cada uno?? 
+
+.pull-left[
+.center[<img src="img/Conapo_INEGI_Page_1.png" width="250px" style="margin-top: 100px; margin-left: 50px;">]
+]
+
+.pull-right[
+.center[<img src="img/Conapo_INEGI_Page_2.png" width="300px" style="margin-top: 150px;">]
+]
+
+---
+class: center, title-down
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
+
+.left-column[
+<img src="img/Conapo_INEGI_Page_1.png" width="100px" style="margin-top: 30px; margin-left: 50px;"> 
+- Función 1  
+- Función 2 
+]
+
+--
+.right-column[
+<img src="img/Conapo_INEGI_Page_2.png" width="150px" style="margin-top: 10px;">
+- Función 1  
+- Función 2 
+]
+
+---
+
 class: middle, title-down
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
@@ -99,7 +133,7 @@ class: middle, title-down, logo-slide
 
 ]
 
-.pull-right[.center[<img src="img/Logos_R.png" width="100px" height="50px">]]
+.pull-right[.center[<img src="img/Logos_R.png" width="350px">]]
 
 ---
 class: center
