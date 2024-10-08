@@ -23,21 +23,21 @@ output:
       beforeInit: "macros.js"
 ---
 
-```{r setup, include=FALSE, echo = FALSE, warning=FALSE, message=FALSE}
-options(htmltools.dir.version = FALSE)
+```{r setup, include=FALSE, echo = FALSE}
+#options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(
-  fig.width=9, 
-  fig.height=3.5, 
-  fig.retina=3,
-  out.width = "100%",
-  cache = FALSE,
-  echo = TRUE,
-  message = FALSE, 
-  warning = FALSE,
-  error = FALSE,
-  hiline = TRUE,
-  dpli = 300
-)
+                      fig.width=9, 
+                      fig.height=3.5, 
+                      fig.retina=3,
+                      out.width = "100%",
+                      cache = FALSE,
+                      echo = TRUE,
+                      message = FALSE, 
+                      warning = FALSE,
+                      error = FALSE,
+                      hiline = TRUE,
+                      dpli = 300
+                    )
 
 library(xaringanthemer)
 style_duo_accent(
@@ -46,10 +46,10 @@ style_duo_accent(
   inverse_header_color = "#FFFFFF"
 )
 
-require(revealjs)
+
 require(knitr)
 require(tidyverse)
-require(icons)
+#require(icons)
 require(fontawesome)
 require(xaringanExtra)
 
@@ -95,23 +95,12 @@ class: center, title-down
 ]
 
 ---
-class: center, title-down
+class: center, 
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
+<img src="img/Conapo_INEGI_Page_2.png" width="300px" style="margin-top: 10px;">
 
-.left-column[
-<img src="img/Conapo_INEGI_Page_1.png" width="100px" style="margin-top: 30px; margin-left: 50px;"> 
-- Función 1  
-- Función 2 
-]
-
---
-.right-column[
-<img src="img/Conapo_INEGI_Page_2.png" width="150px" style="margin-top: 10px;">
-- Función 1  
-- Función 2 
-]
-
+<img src="img/INEGI_Temas.png" width="800px" height="400px" style="margin-top: 10px;">
 ---
 
 class: middle, title-down
