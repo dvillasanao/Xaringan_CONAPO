@@ -70,9 +70,25 @@ background-image: url(img/fondo_conapo.png)
 background-size: contain
 background-position: -66% 10%
 
+<!-- Presentación inicial  -->
+
 # Consejo Nacional de Población  
 
 ![](img/conapo_logo.png)
+---
+class: middle, title-down
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
+<!-- Areás de un actuario  -->
+
+.pull-left[
+# Áreas profesionales
+]
+
+.pull-right[.center[<img src="img/Actuaría.png" width="600px">
+      ]
+]
+
 ---
 class: center, title-down
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
@@ -80,53 +96,67 @@ class: center, title-down
 <img src="img/Gobernación_CONAPO.jpg" width="550px"; height="600px">
 
 ---
-
 class: center, title-down
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
+<!-- CONAPO | INEGI  -->
+
 ## ¿¿A qué se dedicada cada uno?? 
 
-.pull-left[
-.center[<img src="img/Conapo_INEGI_Page_1.png" width="250px" style="margin-top: 100px; margin-left: 50px;">]
+.pull-left[.center[<img src="img/Conapo_INEGI_Page_1.png" width="250px" style="margin-top: 100px; margin-left: 50px;">
+      ]
 ]
 
-.pull-right[
-.center[<img src="img/Conapo_INEGI_Page_2.png" width="300px" style="margin-top: 150px;">]
+.pull-right[.center[<img src="img/Conapo_INEGI_Page_2.png" width="300px" style="margin-top: 150px;">
+        ]
 ]
+
+---
+class: center
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
+<!-- INEGI (Temas) -->
+
+<img src="img/Conapo_INEGI_Page_2.png" width="300px" style="margin-top: 10px;">
+
+<img src="img/INEGI_Temas.png" width="800px" height="400px" style="margin-top: 10px;">
 
 ---
 class: center, 
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
-<img src="img/Conapo_INEGI_Page_2.png" width="300px" style="margin-top: 10px;">
+<!-- Dinámica poblacional -->
 
-<img src="img/INEGI_Temas.png" width="800px" height="400px" style="margin-top: 10px;">
----
+## CONAPO
 
-class: middle, title-down
-<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+<!-- Imagen inicial -->
+<img src="img/Dinámica poblacional_Page_1.png" style="position: absolute; top: 100px; left: 50px; width: 800px; height: 600px;">
 
-.pull-left[
-# Áreas profesionales
-]
-
-.pull-right[.center[<img src="img/Actuaría.png" width="600px">]]
+--
+<!-- Imagen sobrepuesta -->
+<img src="img/Dinámica poblacional_Page_2.png" style="position: absolute; top: 110px; right: 50px; width: 500px; height: 500px;">
 
 ---
 class: middle, title-down, logo-slide
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
+<!-- Lenguajes de programación  -->
+
 .pull-left[
-
 # Lenguajes de programación 📦
-
 ]
 
-.pull-right[.center[<img src="img/Logos_R.png" width="350px">]]
+.pull-right[
+  .center[<img src="img/Logos_R.png" width="350px">
+  ]
+]
 
 ---
+
 class: center
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
+<!-- Mapa Leaflet  -->
 
 ### Pueden crear mapas dinámicos 📦
 
@@ -135,19 +165,22 @@ class: center
 <!--/html_preserve-->
 
 ---
-
 class: center, middle
 background-image: url(img/Anahuac_fondo.png)
 background-size: contain
 background-position: 0% 10%
 
+<!-- Pregunta. Cuándo no tenemos datos?  -->
+
 .left-column[]
-.right-column[.center[<span class="large-text">¿Cuándo no tenemos datos?</span>]]
+.right-column[.center[<span class="large-text">¿Cuándo no tenemos datos?</span>
+    ]
+  ]
 
 ---
-
-
 class: center, middle
+
+<!-- GiF  -->
 
 <iframe src="https://giphy.com/embed/WRQBXSCnEFJIuxktnw" width="500" height="300"  style="" frameBorder="0" class="giphy-embed"></iframe>
 
