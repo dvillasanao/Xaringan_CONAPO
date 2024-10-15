@@ -28,7 +28,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
                       dpi = 300,            # asegura gráficos de alta resolución
                       warning = FALSE,      # los mensajes de advertencia NO se muestran
-                      error = FALSE)  
+                      error = FALSE,
+                      class.source = "small-text")  
 
 library(xaringanthemer)
 style_duo_accent(
@@ -140,20 +141,37 @@ class: middle, center
 class: center 
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
+<!-- Fuente de datos -->
+
+# Fuente de datos 
+
+.center[.left[
+* ## <span style="color: black;"> Censos </span>
+* ## <span style="color: black;"> Encuestas </span>
+* ## <span style="color: black;"> Registros administrativos </span>  
+* ## <span style="color: black;"> Reportes (Trabajo de campo) </span>
+  ]
+]
+
+---
+class: center 
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
 <!-- Funciones que realizo -->
 
 ## Actividades que realizo 
 
-.pull-left[.left[* Investigación  
-* Data Analyst 
-* Política Pública  
-* Estadística y matemáticas   
-* Programación
-* Machine Learning 
-* Evaluación de diseños muestrales
-* Big Data 
-* Consultorías y Asesorías
-* Artículos y publicaciones (Diversos temas) 
+.pull-left[.left[
+* <span style="font-size: 25px;"> Investigación  </span>
+* <span style="font-size: 25px;"> Data Analyst </span>
+* <span style="font-size: 25px;"> Política Pública  </span>
+* <span style="font-size: 25px;"> Estadística y matemáticas  </span> 
+* <span style="font-size: 25px;"> Programación </span>
+* <span style="font-size: 25px;"> Machine Learning </span>
+* <span style="font-size: 25px;"> Evaluación de diseños muestrales </span>
+* <span style="font-size: 25px;"> Big Data </span>
+* <span style="font-size: 25px;"> Consultorías y Asesorías </span>
+* <span style="font-size: 25px;"> Artículos y publicaciones </span>
   ]
 ]
 
@@ -170,10 +188,25 @@ class: center
 
 <!-- Imagen -->
 
-<img src="img/Ambito Nacional - Internacional.png" style="position: absolute; top: 110px; right: 150px; width: 700px; height: 570px;">
+<img src="img/Ambito Nacional - Internacional.png" style="position: absolute; top: 110px; left: 300px; width: 700px; height: 570px;">
 
 ---
 
+class: center, middle
+background-image: url(img/Anahuac_fondo.png)
+background-size: contain
+background-position: 0% 10%
+
+<!-- Pregunta: ¿Cuándo no tenemos datos? -->
+
+.left-column[]
+
+.right-column[
+  .center[
+    <span class="large-text"> Desafios del actuario</span>
+  ]
+]
+---
 class: middle, title-down, logo-slide
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
@@ -188,6 +221,7 @@ class: middle, title-down, logo-slide
   ]
 ]
 
+<img src="img/RMarkdown.png" style="position: absolute; bottom: 10px; left: 300px; width: 300px; height: 300px;">
 ---
 
 class: center
@@ -242,12 +276,28 @@ background-position: 0% 10%
 </iframe>
 
 ---
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
+<!-- Pregunta: ¿Cuándo no tenemos datos? -->
+
+.left[<span class="large-text">Estadística clasica</span>]
+.center[<span class="large-text">vs.</span>]
+.right[<span class="large-text">Estadística bayesiana</span>] 
+
+<img src="img/DFI.jpeg" style="position: absolute; bottom: 50px; right: 50px; width: 300px; height: 250px;">
+
+--
+
+<span class="large-text"; style="top: 450px; left: 400px; color: black; font-size: 3.5em;">Estadística espacial</span>
+
+
+---
 class: center, middle
 background-image: url(img/Anahuac_fondo.png)
 background-size: contain
 background-position: 0% 10%
 
-<!-- Pregunta: ¿Cuándo no tenemos datos? -->
+<!-- Pregunta: La estadística miente -->
 
 .left-column[]
 
@@ -264,8 +314,119 @@ background-position: 0% 10%
   ]
 ]
 ]
--- 
 
 ---
+class: center, subtitle-down
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
 <!-- Caso de la CMPDH -->
+
+## Comisión Mexicana de Defensa y Promoción de los Derechos Humanos  (CMDPDH)
+
+<img src="img/ENVIPE 1.png" style="position: absolute; top: 200px; left: 10px; width: 700px; height: 200px;">
+
+<img src="img/ENVIPE 2.png" style="position: absolute; bottom: 50px; right: 10px; width: 600px; height: 250px;">
+
+-- 
+
+<!-- Texto base -->
+<span class="large-text" style="position: absolute; top: 250px; left: 50px; color: black; font-size: 1.5em; text-align: center;">
+  Migración interna en México, 2020 <br> 
+  3 936 679 personas <br> 
+  (Periodo de 5 años)
+</span>
+
+<!-- Texto sobrepuesto que aparecerá al pasar el cursor -->
+<span class="large-text" style="position: absolute; top: 30px; right: 40px; color: black; font-size: 1.5em; text-align: center; transition: opacity 0.5s;">
+  Es decir, se mudan <br> 
+  700 000 personas al año <br> 
+  en promedio
+</span>
+
+--
+
+---
+class: center, middle
+background-image: url(img/Anahuac_fondo.png)
+background-size: contain
+background-position: 0% 10%
+
+.right-column[
+  .center[
+    <span class="large-text" style"display: block; text-align: center; margin: 10 auto;">
+    Cuando tus datos están muy feos
+    </span>
+  ]
+]
+
+--
+<!-- Imagen sobrepuesta -->
+<iframe src="https://giphy.com/embed/4bBLOhnMb0vHG" 
+        width="250" 
+        height="250"  
+        style="position: absolute; top: 5px; right: 100px;" 
+        frameBorder="0">
+        
+</iframe> 
+
+---
+<!-- Pregunta: ¿Cuándo no tenemos datos? -->
+
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+require(ggplot2) 
+
+ggplot(data = cars, aes(x = dist)) +
+  geom_histogram(aes(y = ..density.., 
+                     fill = ..count.., 
+                     color = ..count..), 
+                 bins = 30,
+                 alpha = 0.7) +
+  stat_function(fun = dnorm, 
+                colour = "#0C3D7D9F", 
+                linewidth = 2, 
+                args = list(mean = mean(cars$dist, na.rm = TRUE), 
+                            sd = sd(cars$dist, na.rm = TRUE))) +
+  theme_bw() + 
+  theme() + 
+  scale_fill_viridis_c() +
+  scale_color_viridis_c() +
+  ggtitle("Histograma + curva normal teórica")
+```
+
+---
+<!-- Pregunta: ¿Cuándo no tenemos datos? -->
+
+
+```{r, echo = TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+set.seed(123)  # Para reproducibilidad
+sesgada <- rgamma(10000, shape = 0.5, rate = 5)  # Distribución gamma sesgada
+
+# Graficar la distribución
+library(ggplot2)
+library(viridis)
+
+
+ggplot(data.frame(sesgada), aes(x = sesgada)) +
+  geom_histogram(aes(y = ..density.., fill = ..count.., color = ..count..), bins = 100, alpha = 0.7) +
+  theme_bw() + 
+  scale_fill_viridis_c() +
+  scale_color_viridis_c() +
+  ggtitle("Distribucción gamma + curva gamma teórica")
+```
+
+---
+class: center, middle
+background-image: url(img/Anahuac_fondo.png)
+background-size: contain
+background-position: 0% 10%
+
+.right-column[
+  .center[
+    <span class="large-text" style = "display: block; text-align: center; margin: 0 auto;"> Comparte tu conocimiento 🙏 
+    </span>
+  ]
+]
+
+
+---
