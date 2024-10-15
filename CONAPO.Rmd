@@ -25,19 +25,10 @@ output:
 
 ```{r setup, include=FALSE, echo = FALSE}
 #options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(
-                      fig.width=9, 
-                      fig.height=3.5, 
-                      fig.retina=3,
-                      out.width = "100%",
-                      cache = FALSE,
-                      echo = TRUE,
-                      message = FALSE, 
-                      warning = FALSE,
-                      error = FALSE,
-                      hiline = TRUE,
-                      dpli = 300
-                    )
+knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
+                      dpi = 300,            # asegura gráficos de alta resolución
+                      warning = FALSE,      # los mensajes de advertencia NO se muestran
+                      error = FALSE)  
 
 library(xaringanthemer)
 style_duo_accent(
@@ -130,7 +121,7 @@ class: center,
 ## CONAPO
 
 <!-- Imagen inicial -->
-<img src="img/Dinámica poblacional_Page_1.png" style="position: absolute; top: 100px; left: 50px; width: 800px; height: 600px;">
+<img src="img/Dinámica poblacional_Page_1.png" style="position: absolute; top: 100px; left: 10px; width: 700px; height: 600px;">
 
 --
 <!-- Imagen sobrepuesta -->
@@ -145,6 +136,44 @@ class: middle, center
 <img src="img/Factores.png" style="position: absolute; top: 50px; right: 250px; width: 700px; height: 600px;">
 
 ---
+
+class: center 
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
+<!-- Funciones que realizo -->
+
+## Actividades que realizo 
+
+.pull-left[.left[* Investigación  
+* Data Analyst 
+* Política Pública  
+* Estadística y matemáticas   
+* Programación
+* Machine Learning 
+* Evaluación de diseños muestrales
+* Big Data 
+* Consultorías y Asesorías
+* Artículos y publicaciones (Diversos temas) 
+  ]
+]
+
+.pull-right[<img src="img/Data Science.png" style="width: 500px;">]
+
+---
+
+class: center 
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
+<!-- Trabajo para el actuario -->
+
+## Actuarios (Estadística y Demografía) 
+
+<!-- Imagen -->
+
+<img src="img/Ambito Nacional - Internacional.png" style="position: absolute; top: 110px; right: 150px; width: 700px; height: 570px;">
+
+---
+
 class: middle, title-down, logo-slide
 <img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
 
@@ -213,6 +242,30 @@ background-position: 0% 10%
 </iframe>
 
 ---
+class: center, middle
+background-image: url(img/Anahuac_fondo.png)
+background-size: contain
+background-position: 0% 10%
 
+<!-- Pregunta: ¿Cuándo no tenemos datos? -->
+
+.left-column[]
+
+.right-column[
+  .center[
+    <span class="large-text">La estadística miente</span>
+  ]
+]
+
+--
+.right-column[
+  .bottom[.right[
+    <span class="large-text"; style="bottom: 5px; left: 350px; color: black; font-size: 3em;">Y miente mucho</span>
+  ]
+]
+]
+-- 
 
 ---
+
+<!-- Caso de la CMPDH -->
