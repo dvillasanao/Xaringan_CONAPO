@@ -330,19 +330,18 @@ background-position: 0% 10%
 &lt;/iframe&gt; 
 
 ---
+class: center, middle
+&lt;img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;"&gt;
+
 &lt;!-- Pregunta: ¿Cuándo no tenemos datos? --&gt;
 
+.pull-left[
 
-
-```{.r .small-text}
+```r
 require(ggplot2) 
 
 ggplot(data = cars, aes(x = dist)) +
-  geom_histogram(aes(y = ..density.., 
-                     fill = ..count.., 
-                     color = ..count..), 
-                 bins = 30,
-                 alpha = 0.7) +
+  geom_histogram(aes(y = ..density.., fill = ..count.., color = ..count..), bins = 30, alpha = 0.7) +
   stat_function(fun = dnorm, 
                 colour = "#0C3D7D9F", 
                 linewidth = 2, 
@@ -354,22 +353,26 @@ ggplot(data = cars, aes(x = dist)) +
   scale_color_viridis_c() +
   ggtitle("Histograma + curva normal teórica")
 ```
+]
 
-![](CONAPO_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+.pull-right[
+![](CONAPO_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+]
 
 ---
+class: center, middle
+&lt;img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;"&gt;
+
 &lt;!-- Pregunta: ¿Cuándo no tenemos datos? --&gt;
 
+.pull-left[
 
 
-```{.r .small-text}
+```r
+require(ggplot2) 
+
 set.seed(123)  # Para reproducibilidad
 sesgada &lt;- rgamma(10000, shape = 0.5, rate = 5)  # Distribución gamma sesgada
-
-# Graficar la distribución
-library(ggplot2)
-library(viridis)
-
 
 ggplot(data.frame(sesgada), aes(x = sesgada)) +
   geom_histogram(aes(y = ..density.., fill = ..count.., color = ..count..), bins = 100, alpha = 0.7) +
@@ -379,7 +382,11 @@ ggplot(data.frame(sesgada), aes(x = sesgada)) +
   ggtitle("Distribucción gamma + curva gamma teórica")
 ```
 
-![](CONAPO_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+![](CONAPO_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+]
 
 ---
 class: center, middle

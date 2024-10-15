@@ -28,8 +28,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE,         # FALSE: los bloques de código NO se muestran
                       dpi = 300,            # asegura gráficos de alta resolución
                       warning = FALSE,      # los mensajes de advertencia NO se muestran
-                      error = FALSE,
-                      class.source = "small-text")  
+                      error = FALSE
+                      )  
 
 library(xaringanthemer)
 style_duo_accent(
@@ -370,18 +370,17 @@ background-position: 0% 10%
 </iframe> 
 
 ---
+class: center, middle
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
 <!-- Pregunta: ¿Cuándo no tenemos datos? -->
 
-
-```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+.pull-left[
+```{r, echo=TRUE, eval=FALSE}
 require(ggplot2) 
 
 ggplot(data = cars, aes(x = dist)) +
-  geom_histogram(aes(y = ..density.., 
-                     fill = ..count.., 
-                     color = ..count..), 
-                 bins = 30,
-                 alpha = 0.7) +
+  geom_histogram(aes(y = ..density.., fill = ..count.., color = ..count..), bins = 30, alpha = 0.7) +
   stat_function(fun = dnorm, 
                 colour = "#0C3D7D9F", 
                 linewidth = 2, 
@@ -393,19 +392,40 @@ ggplot(data = cars, aes(x = dist)) +
   scale_color_viridis_c() +
   ggtitle("Histograma + curva normal teórica")
 ```
+]
+
+.pull-right[
+```{r, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE, fig.height=5}
+require(ggplot2) 
+
+ggplot(data = cars, aes(x = dist)) +
+  geom_histogram(aes(y = ..density.., fill = ..count.., color = ..count..), bins = 30, alpha = 0.7) +
+  stat_function(fun = dnorm, 
+                colour = "#0C3D7D9F", 
+                linewidth = 2, 
+                args = list(mean = mean(cars$dist, na.rm = TRUE), 
+                            sd = sd(cars$dist, na.rm = TRUE))) +
+  theme_bw() + 
+  theme() + 
+  scale_fill_viridis_c() +
+  scale_color_viridis_c() +
+  ggtitle("Histograma + curva normal teórica")
+```
+]
 
 ---
+class: center, middle
+<img src="img/logo_esquina.png" style="position: absolute; top: 10px; right: 10px; width: 200px; opacity: 0.5;">
+
 <!-- Pregunta: ¿Cuándo no tenemos datos? -->
 
+.pull-left[
 
-```{r, echo = TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+```{r, eval = FALSE, echo = TRUE}
+require(ggplot2) 
+
 set.seed(123)  # Para reproducibilidad
 sesgada <- rgamma(10000, shape = 0.5, rate = 5)  # Distribución gamma sesgada
-
-# Graficar la distribución
-library(ggplot2)
-library(viridis)
-
 
 ggplot(data.frame(sesgada), aes(x = sesgada)) +
   geom_histogram(aes(y = ..density.., fill = ..count.., color = ..count..), bins = 100, alpha = 0.7) +
@@ -414,6 +434,24 @@ ggplot(data.frame(sesgada), aes(x = sesgada)) +
   scale_color_viridis_c() +
   ggtitle("Distribucción gamma + curva gamma teórica")
 ```
+
+]
+
+.pull-right[
+```{r, echo = FALSE, eval=TRUE, message=FALSE, warning=FALSE, fig.height=5}
+require(ggplot2) 
+
+set.seed(123)  # Para reproducibilidad
+sesgada <- rgamma(10000, shape = 0.5, rate = 5)  # Distribución gamma sesgada
+
+ggplot(data.frame(sesgada), aes(x = sesgada)) +
+  geom_histogram(aes(y = ..density.., fill = ..count.., color = ..count..), bins = 100, alpha = 0.7) +
+  theme_bw() + 
+  scale_fill_viridis_c() +
+  scale_color_viridis_c() +
+  ggtitle("Distribucción gamma + curva gamma teórica")
+```
+]
 
 ---
 class: center, middle
