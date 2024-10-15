@@ -319,7 +319,9 @@ background-position: 0% 10%
 
 --
 
-<span class="large-text"; style="top: 450px; left: 400px; color: black; font-size: 3.5em;">Estadística espacial</span>
+<span class="large-text"; style="top: 450px; left: 400px; color: #D56A2E; font-size: 3.5em; text-align: center;">
+Estadística espacial 👋 
+</span>
 
 
 ---
